@@ -275,7 +275,8 @@ if ($nfs_server) {
 }
 
 if (!$is_network_down) {
-	push @caf_mirrors, 'https://source.codeaurora.org/mirrored_source/quic/qsdk';
+#	push @caf_mirrors, 'https://source.codeaurora.org/mirrored_source/quic/qsdk';
+	push @caf_mirrors, 'https://artifacts.codelinaro.org/ui/native/codelinaro-qsdk/';
 }
 #first check in NFS and CAF server
 while (!$ok and !-f "$target/$filename") {
